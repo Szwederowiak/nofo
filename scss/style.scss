@@ -14,3 +14,18 @@
 @import 'layout/navigation';
 
 @import 'pages/home';
+@import 'pages/works';
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    position: relative;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 70px;
+}
