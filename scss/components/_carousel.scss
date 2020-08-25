@@ -1,0 +1,50 @@
+.home-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .slide {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .slide__img {
+        max-width: 100%;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 123;
+    font-size: 0;
+    margin: 0;
+    border: none;
+    bottom: 2rem;
+    left: 2rem;
+    height: 50px;
+    width: 50px;
+    background: rgba($color-white, 0.75);
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(lighten($color-white, 50%), 0.9);
+      .icon path {
+        fill: rgba(darken($color-black, 50%), 0.75);
+      }
+    }
+
+    .icon path {
+      fill: rgba($color-black, 0.8);
+      transition: 0.3s ease fill;
+    }
+
+    &.slick-next {
+      transform: translateX(calc(100% + 1rem));
+    }
+  }
+}

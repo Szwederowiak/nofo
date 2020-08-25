@@ -1,0 +1,65 @@
+* {
+  font-family: $font-primary;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-style: italic;
+  color: inherit;
+  font-weight: 600;
+  font-size: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.35rem
+}
+@media (min-width: 1024px) {
+    font-size: 2.7rem
+
+  }
+}
+
+p,
+a {
+  color: $color-black;
+  color: inherit;
+}
+
+.fat {
+  font-weight: 800;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: $color-white !important;
+}
+
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
